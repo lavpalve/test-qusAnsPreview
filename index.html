@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <title>Question Answer Preview</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                margin: auto;
+                background-color: azure;
+            }
+            h2{
+                font-family: 'Sofia', sans-serif;
+                color: goldenrod;
+            }
+            .container{
+                width: 60%;
+                height: auto;
+                text-align: center;
+                margin: auto;
+                margin-top: 100px;
+                padding-bottom: 50px;
+                box-shadow: 0 0 10px #0f0f0f;
+            }
+            .qusAnsBox{
+                width: 80%;
+                border-radius: 2px;
+                box-shadow: 0 0 5px #333;
+                margin: auto;
+                margin-bottom: 30px;
+                text-align: start;
+                font-size: 20px;
+                background-color: white;
+            }
+            .qusBox{
+                padding: 10px 10px;
+            }
+            .qusBox span{
+                color: goldenrod;
+                text-align: end;
+                float: right;
+                margin-right: 15px;
+            }
+            .ansBox{
+                display: none;
+                padding: 0px 10px 20px 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Genral Questions</h2>
+            <div class="qusAnsBox">
+                <div class="qusBox">
+                    What is closure with example?
+                    <span class="iconBox" id="iconBox1" onclick="previewAns('iconBox1','ansBox1')"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span>
+                </div>
+                <div class="ansBox" id="ansBox1">
+                    <p>&emsp;&emsp;A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function.</p>
+                </div>
+            </div>
+            <div class="qusAnsBox">
+                <div class="qusBox">
+                    Why is it called closure?
+                    <span class="iconBox" id="iconBox2" onclick="previewAns('iconBox2','ansBox2')"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span>
+                </div>
+                <div class="ansBox" id="ansBox2">
+                    <p>&emsp;&emsp;The term closure comes from the fact that a piece of code (block, function) can have free variables that are closed (i.e. bound to a value) by the environment in which the block of code is defined. In the function body there are two names (variables) v and k indicating two integer values.</p>
+                </div>
+            </div>
+            <div class="qusAnsBox">
+                <div class="qusBox">
+                    How do you use closure?
+                    <span class="iconBox" id="iconBox3" onclick="previewAns('iconBox3','ansBox3')"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span>
+                </div>
+                <div class="ansBox" id="ansBox3">
+                    <p>&emsp;&emsp;To use a closure, define a function inside another function and expose it. To expose a function, return it or pass it to another function. The inner function will have access to the variables in the outer function scope, even after the outer function has returned.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+        <script src="index.js"></script>
+    </body>
+</hmtl>
